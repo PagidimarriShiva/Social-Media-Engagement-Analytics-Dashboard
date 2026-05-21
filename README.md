@@ -159,6 +159,10 @@ Analyzes performance across Instagram, LinkedIn, X, and ArtStation.
 ### Insights & Recommendations
 
 <img width="1328" height="758" alt="Screenshot 2026-05-15 215102" src="https://github.com/user-attachments/assets/a5051b01-7840-4c68-8cc9-40bef84709c3" />
+### Dashboard
+<img width="999" height="1075" alt="Screenshot 2026-05-21 114432" src="https://github.com/user-attachments/assets/235962e2-b6c8-41c2-91b6-b5c21407f1bb" />
+
+
 
 ## Project Outcomes
 - Centralized multi-platform social media KPI reporting into a single interactive dashboard.

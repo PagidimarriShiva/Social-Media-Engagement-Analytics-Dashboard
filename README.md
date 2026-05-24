@@ -1,78 +1,113 @@
-# Social Media Engagement Analytics Dashboard
-## Project Overview
+# 📱 Social Media Engagement Analytics Dashboard
 
-This project analyzes social media engagement performance for Little Red Zombies (LRZ) across multiple platforms including Instagram, X (Twitter), LinkedIn, and ArtStation.
+> Centralizing multi-platform social media KPIs into an interactive Power BI dashboard for **Little Red Zombies (LRZ)** — covering Instagram, X (Twitter), LinkedIn, and ArtStation.
 
-The dashboard was designed to help stakeholders monitor engagement trends, evaluate content performance, identify underperforming areas, and make data-driven marketing decisions through interactive KPI reporting and visual analytics.
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
 
-The solution focuses on:
+---
 
-- engagement analysis,
-- audience growth tracking,
-- content performance evaluation,
-- platform comparison,
-- and marketing strategy optimization.
+## 📑 Table of Contents
 
-## Business Problem
+- [Project Overview](#-project-overview)
+- [Business Problem](#-business-problem)
+- [Tools & Technologies](#-tools--technologies)
+- [Dataset Information](#-dataset-information)
+- [Key Metrics Tracked](#-key-metrics-tracked)
+- [SQL Analysis Performed](#-sql-analysis-performed)
+- [Business Questions Solved](#-business-questions-solved)
+- [Dashboard Pages](#-dashboard-pages)
+- [Key Insights](#-key-insights)
+- [Risk Areas](#-risk-areas)
+- [Business Recommendations](#-business-recommendations)
+- [Dashboard Screenshots](#-dashboard-screenshots)
+- [Project Outcomes](#-project-outcomes)
+- [Future Improvements](#-future-improvements)
+
+---
+
+## 📝 Project Overview
+
+This project analyzes social media engagement performance for **Little Red Zombies (LRZ)** across four platforms: Instagram, X (Twitter), LinkedIn, and ArtStation.
+
+The dashboard enables stakeholders to monitor engagement trends, evaluate content performance, identify underperforming areas, and make data-driven marketing decisions through interactive KPI reporting and visual analytics.
+
+**Focus areas:**
+- Engagement analysis
+- Audience growth tracking
+- Content performance evaluation
+- Platform comparison
+- Marketing strategy optimization
+
+---
+
+## 🧩 Business Problem
 
 Little Red Zombies required a centralized analytics dashboard to monitor and evaluate social media performance across multiple platforms.
 
-The primary challenges included:
+**Primary challenges:**
+- Tracking engagement trends over time
+- Comparing platform-level performance
+- Identifying high-performing content types
+- Detecting declining engagement patterns
+- Generating actionable business recommendations
 
-- tracking engagement trends over time,
-- comparing platform-level performance,
-- identifying high-performing content types,
-- detecting declining engagement patterns,
-- and generating actionable business recommendations.
+**Objective:** Transform scattered social media metrics into a unified reporting solution for better strategic decision-making.
 
-The objective was to transform scattered social media metrics into a unified reporting solution for better strategic decision-making.
+---
 
-## Tools & Technologies
-### Tool         Purpose
-- Power BI	    Dashboard development & visualization
-- SQL         	KPI analysis & metric calculations
-- DAX	          Custom measures & calculations
-- Excel        	Data validation
+## 🛠️ Tools & Technologies
 
-## Dataset Information
-- The dataset was built using publicly available social media activity data combined with modeled engagement metrics to simulate realistic multi-platform marketing analysis.
-- The project focuses on analytical workflow, KPI reporting, trend analysis, and dashboard-driven decision-making.
+| Tool | Purpose |
+|------|---------|
+| Power BI | Dashboard development & visualization |
+| SQL | KPI analysis & metric calculations |
+| DAX | Custom measures & calculated columns |
+| Excel | Data validation & preprocessing |
 
-Platforms Included
-Instagram
-X (Twitter)
-LinkedIn
-ArtStation
+---
 
-## Dataset Fields
-Column Name
-Date
-Platform
-Post Title
-Content Type
-Topic
-Impressions
-Reach
-Likes
-Comments
-Shares
-Saves
-Followers
-Total Engagement
-Engagement Rate
+## 📂 Dataset Information
 
-## Key Metrics Tracked
-- Total Engagement
-- Engagement Rate
-- Reach
-- Impressions
+The dataset was built using publicly available social media activity data combined with modeled engagement metrics to simulate realistic multi-platform marketing analysis.
+
+**Platforms included:** Instagram · X (Twitter) · LinkedIn · ArtStation
+
+### Dataset Fields
+
+| Column | Description |
+|--------|-------------|
+| `Date` | Post date |
+| `Platform` | Social media platform |
+| `Post Title` | Title or caption of the post |
+| `Content Type` | Format (Reel, Image, Article, etc.) |
+| `Topic` | Subject matter category |
+| `Impressions` | Total times content was displayed |
+| `Reach` | Unique accounts reached |
+| `Likes` | Total likes |
+| `Comments` | Total comments |
+| `Shares` | Total shares |
+| `Saves` | Total saves |
+| `Followers` | Follower count at time of post |
+| `Total Engagement` | Sum of all interactions |
+| `Engagement Rate` | Engagement / Reach × 100 |
+
+---
+
+## 📊 Key Metrics Tracked
+
+- Total Engagement & Engagement Rate
+- Reach and Impressions
 - Followers Growth
 - Saves & Shares
-- Platform Performance
-- Content-Type Performance
+- Platform-wise and Content-type performance
 - Audience Growth Trends
 
-## SQL Analysis Performed
+---
+
+## 🗄️ SQL Analysis Performed
+
 - KPI aggregation queries
 - Platform-wise engagement analysis
 - Trend-based performance comparisons
@@ -80,35 +115,38 @@ Engagement Rate
 - Engagement rate calculations
 - Follower growth analysis
 
-## Business Questions Solved
-- Which platform generated the highest engagement?
-- Which content type performed best?
-- What factors contributed to declining engagement?
-- Which platform showed the strongest follower growth?
-- Which posting patterns impacted audience retention?
-- What content strategy improvements could increase engagement?
+---
 
-## Dashboard Pages
-### 1. Executive Overview- 
-Provides a high-level summary of overall platform performance and engagement KPIs.
-#### Features
-- KPI cards
+## ❓ Business Questions Solved
+
+1. Which platform generated the highest engagement?
+2. Which content type performed best?
+3. What factors contributed to declining engagement?
+4. Which platform showed the strongest follower growth?
+5. Which posting patterns impacted audience retention?
+6. What content strategy improvements could increase engagement?
+
+---
+
+## 🖥️ Dashboard Pages
+
+### 1. Executive Overview
+High-level summary of overall platform performance and engagement KPIs.
+- KPI summary cards
 - Engagement trend analysis
-- Reach vs engagement comparison
-- Platform comparison
+- Reach vs. engagement comparison
+- Platform comparison chart
 - Risk & attention indicators
 
 ### 2. Platform Analytics
-Analyzes performance across Instagram, LinkedIn, X, and ArtStation.
-#### Features
-- Platform-wise engagement analysis
-- Followers growth tracking
-- Reach distribution
+Deep-dive into performance across Instagram, LinkedIn, X, and ArtStation.
+- Platform-wise engagement breakdown
+- Follower growth tracking
+- Reach distribution by platform
 - Monthly platform performance trends
 
 ### 3. Content Performance
-- Evaluates content effectiveness across different content categories and topics.
-#### Features
+Evaluates content effectiveness across categories and topics.
 - Content-type comparison
 - Topic performance analysis
 - Top-performing posts
@@ -116,68 +154,74 @@ Analyzes performance across Instagram, LinkedIn, X, and ArtStation.
 - Engagement trends by content type
 
 ### 4. Insights & Recommendations
-- Converts analytical findings into actionable business recommendations.
-#### Features
-- Positive & negative insights
+Converts analytical findings into actionable business recommendations.
+- Positive & negative insights summary
 - Risk analysis
 - Strategic recommendations
 - Engagement trend monitoring
 
-## Key Insights
-- Positive Insights
-- Instagram cinematic posts generated the highest engagement rate.
-- ArtStation artwork posts showed strong niche audience interaction.
-- Behind-the-scenes content maintained stable engagement growth.
+---
 
-## Risk Areas
-- X engagement declined despite consistent posting frequency.
-- LinkedIn growth remained slow due to inconsistent posting activity.
-- Recruitment-focused posts underperformed across platforms.
-- 
-## Business Recommendations
-### Recommendation	                          Expected Impact
-- Increase cinematic content frequency    	Higher engagement & shares
-- Repurpose Instagram reels to LinkedIn    	Better professional reach
-- Improve LinkedIn posting consistency	    Stronger employer branding
-- Reduce repetitive promotional posts	      Improved audience retention
-- Increase ArtStation uploads	Stronger      niche community growth
+## ✅ Key Insights
 
-## Dashboard Screenshots
+- Instagram cinematic posts generated the **highest engagement rate** across all platforms
+- ArtStation artwork posts showed **strong niche audience interaction**
+- Behind-the-scenes content maintained **stable, consistent engagement growth**
+
+---
+
+## ⚠️ Risk Areas
+
+- X (Twitter) engagement **declined** despite consistent posting frequency
+- LinkedIn growth remained **slow** due to inconsistent posting activity
+- Recruitment-focused posts **underperformed** across all platforms
+
+---
+
+## 💡 Business Recommendations
+
+| Recommendation | Expected Impact |
+|---------------|----------------|
+| Increase cinematic content frequency | Higher engagement & shares |
+| Repurpose Instagram Reels to LinkedIn | Better professional reach |
+| Improve LinkedIn posting consistency | Stronger employer branding |
+| Reduce repetitive promotional posts | Improved audience retention |
+| Increase ArtStation uploads | Stronger niche community growth |
+
+---
+
+## 📸 Dashboard Screenshots
+
 ### Executive Overview
+![Executive Overview](ShivaPagidimarri_LRZ_Dashboard.pdf)
 
-<img width="1342" height="743" alt="Screenshot 2026-05-15 215135" src="https://github.com/user-attachments/assets/708d2b0f-f0b2-47d9-b5b3-931ff0a4b6ac" />
+> 📄 Full dashboard available in the `.pbix` and `.pdf` files in this repository.
 
+---
 
-### Platform Analytics
+## 🏁 Project Outcomes
 
-<img width="1337" height="746" alt="Screenshot 2026-05-15 215125" src="https://github.com/user-attachments/assets/2b3d34b3-0bbe-44c0-922f-38bbc74c82da" />
+- Centralized multi-platform social media KPI reporting into a **single interactive dashboard**
+- Improved visibility into engagement trends, audience growth, and content effectiveness
+- Identified underperforming platforms and inconsistent posting behaviors
+- Delivered actionable recommendations to improve audience retention and engagement
 
-### Content Performance
+---
 
-<img width="1333" height="743" alt="Screenshot 2026-05-15 215114" src="https://github.com/user-attachments/assets/603dc288-25e5-4efb-97cc-0b348c843fe0" />
+## 🚀 Future Improvements
 
-### Insights & Recommendations
+- Live API integration for real-time data refresh
+- Automated data pipeline with scheduled refresh
+- Sentiment analysis on comments
+- Audience segmentation by demographics
+- Predictive engagement forecasting using ML
 
-<img width="1328" height="758" alt="Screenshot 2026-05-15 215102" src="https://github.com/user-attachments/assets/a5051b01-7840-4c68-8cc9-40bef84709c3" />
-### Dashboard
-<img width="999" height="1075" alt="Screenshot 2026-05-21 114432" src="https://github.com/user-attachments/assets/235962e2-b6c8-41c2-91b6-b5c21407f1bb" />
+---
 
+## 👤 Author
 
+**Shiva Pagidimarri**
+Data Analyst | Power BI · SQL · DAX · Excel · Data Visualization
 
-## Project Outcomes
-- Centralized multi-platform social media KPI reporting into a single interactive dashboard.
-- Improved visibility into engagement trends, audience growth, and content effectiveness.
-- Identified underperforming platforms and inconsistent posting behaviors impacting engagement.
-- Delivered actionable recommendations to improve audience retention and engagement performance.
-## Future Improvements
-
-### Potential future enhancements include:
-
-- Live API integration
-- Automated refresh pipelines
-- Sentiment analysis
-- Audience segmentation
-- Predictive engagement forecasting
-## Author
-Shiva Pagidimarri
-Data Analyst | SQL | Power BI | Python | Data Visualization
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shiva-pagidimarri/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/PagidimarriShiva)
